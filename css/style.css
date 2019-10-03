@@ -1,15 +1,107 @@
-@import url(/css/_variable.css);
-@import url(/css/_button.css);
-@import url(/css/_text-change.css);
-@import url(/css/_burger.css);
-@import url(/css/_header.css);
-@import url(/css/_hero.css);
-@import url(/css/_testimonials.css);
-@import url(/css/_promo.css);
-@import url(/css/_interface.css);
-@import url(/css/_feedback.css);
-@import url(/css/_plan.css);
-@import url(/css/_footer.css);
+@import url(text-change.css);
+@import url(burger.css);
+@import url(header.css);
+@import url(hero.css);
+@import url(testimonials.css);
+@import url(promo.css);
+@import url(interface.css);
+@import url(feedback.css);
+@import url(plan.css);
+@import url(footer.css);
+.button {
+  position: relative;
+  width: 202px;
+  height: 42px;
+  margin: auto 0;
+  padding: 0 15px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold; }
+
+.button--primary {
+  border: 1px solid #267DF4;
+  background-color: #267DF4; }
+
+.button--secondary {
+  border: 1px solid #9D9FA3;
+  background-color: #fff;
+  color: #26272D; }
+
+.button--arrow:after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/Arrow-Icon.png);
+  top: 13px;
+  right: 22px;
+  width: 14px;
+  height: 13px; }
+
+.button--arrow:hover {
+  background-color: #448ef4; }
+
+.button--secondary:hover {
+  background-color: #9D9FA3; }
+
+.button--subscribe {
+  border-radius: 30px;
+  background: #6FC754;
+  color: white;
+  border: 1px solid #6FC754;
+  width: 160px;
+  height: 42px;
+  margin: auto 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative; }
+  .button--subscribe:after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/Arrow-Icon.png);
+    top: 13px;
+    right: 14px;
+    width: 14px;
+    height: 13px; }
+  .button--subscribe:hover {
+    background-color: #45c71d; }
+
+.button--xl {
+  height: 50px; }
+
+.button--sm {
+  width: 142px; }
+
+.button--apple:before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/Apple-Icon.png);
+  top: 6px;
+  left: 12px;
+  width: 18px;
+  height: 21px; }
+
+.button--apple:hover {
+  background-color: #448ef4; }
+
+.button-video {
+  color: #26272D;
+  background-color: #F5F5F8;
+  border: 1px solid #9D9FA3; }
+  .button-video:before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/Play-Icon.png);
+    top: 19px;
+    left: 35px;
+    width: 10px;
+    height: 11px; }
+  .button-video:hover {
+    background-color: #9D9FA3; }
+
 * {
   margin: 0;
   padding: 0;
