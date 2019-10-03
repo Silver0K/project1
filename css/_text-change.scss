@@ -1,0 +1,41 @@
+@import "_variable.scss";
+
+.title {
+    color: $color-black;
+}
+
+.title--large {
+    font-size: $h1;
+}
+
+.title--medium {
+    font-size: $h2;
+}
+
+.title--small {
+    font-size: $h3;
+}
+
+.paragraph {
+    color: $color-gray;
+}
+
+.paragraph--special {
+    font-size: $font-size-special;
+}
+
+.paragraph--small {
+    font-size: $font-size-medium;
+}
+
+.span-size {
+    font-size: $font-size-small;
+}
+
+.span-color-black {
+    color: $color-black;
+}
+
+.span-color-gray {
+    color: $color-gray;
+}

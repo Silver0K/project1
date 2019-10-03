@@ -1,0 +1,45 @@
+@import "_variable.scss";
+
+.hero-content  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content__title {
+    margin-bottom: 75px;
+}
+.hero-content__paragraph {
+    margin-bottom: 45px;
+    line-height: 25px;
+}
+.hero-content__button-play {
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+}
+.hero-content__iphone-block {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-content__title {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-content__title {
+        margin: 75px 0;
+        font-size: $h2;
+    }
+
+    .hero-content__iphone-block {
+        display: none;
+    }
+
+    .hero-content__paragraph {
+        color: $color-dark-gray;
+    }
+}

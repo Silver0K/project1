@@ -1,0 +1,244 @@
+@import "_variable.scss";
+$plan-background-gray: #EBEBED;
+
+.plan-block {
+    padding: 1px 0;
+    background-color: $color-middle-gray;
+}
+.plan__container {
+    margin: 140px 0;
+    display: flex;
+    align-items: center;
+}
+
+.plan__left-section {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.plan__you-are-span {
+    margin: 60px 0 25px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.plan__left-paragraph {
+    margin-top: 40px;
+}
+
+.plan__form-choose-plan {
+    width: 265px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    border: 1px solid $color-gray;
+    border-radius: 30px;
+
+    input[type=radio]+label {
+        padding: 15px 29px;
+        font-weight: bold;
+        font-size: $font-size-medium;
+        color: #B5B5B7;
+        text-align: center;
+        text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+        cursor: pointer;
+        background-color: $color-middle-gray;
+        vertical-align: middle;
+        border-radius: 30px;
+    }
+
+    input[type=radio]:checked+label {
+        outline: 0;
+        color: $color-black;
+        background-color: $color-white;
+    }
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.plan__right-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plan {
+    padding: 45px 55px 50px 55px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: $plan-background-gray;
+    border-radius:  10px 0 0 10px;
+    box-sizing: border-box;
+
+    &:hover {
+        padding: 60px 55px 70px 55px;
+        transform: scale(1.1);
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+        &:last-child {
+            border-radius: 10px;
+        }
+    }
+
+    &:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.plan__button {
+    input[type=radio]+label {
+        padding: 15px 29px;
+        font-weight: bold;
+        font-size: $font-size-medium;
+        color: $color-blue;
+        text-align: center;
+        text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+        cursor: pointer;
+        border: 1px solid $color-blue;
+        vertical-align: middle;
+        border-radius: 30px;
+
+        &:hover {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
+    input[type=radio]:checked+label {
+        outline: 0;
+        color: $color-white;
+        background-color: $color-blue;
+    }
+}
+
+
+.plan__list {
+    margin-bottom: 70px;
+
+    li {
+        margin-bottom: 24px;
+
+    &:before {
+        content: url(../img/On-Icon.png);
+        margin-right: 8px;
+    }
+}
+}
+
+
+.plan__right-title {
+    font-weight: lighter;
+}
+
+
+.plan__price {
+    padding: 10px 15px;
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+    border: 1px solid $color-gray;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.plan__description {
+    margin-bottom: 26px;
+    color: $color-dark-gray;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .plan__container {
+        margin: 70px 0;
+    }
+
+    .plan__left-section {
+        margin-bottom: 30px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .plan__block-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .plan-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan__container {
+        margin: 50px 0;
+    }
+
+    .plan__left-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .plan__block-form {
+        padding: 70px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan__left-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan__you-are-span {
+        margin: 30px 0;
+    }
+
+    .plan__block-form {
+        padding: 30px 0;
+    }
+
+    .plan__left-paragraph {
+        margin-top: 20px;
+    }
+
+    .plan__right-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .plan__list {
+        margin-bottom: 35px;
+    }
+}
+

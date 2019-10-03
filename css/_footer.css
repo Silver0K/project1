@@ -1,0 +1,90 @@
+footer {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer__social-block {
+  margin-top: 30px; }
+  .footer__social-block a {
+    margin-left: 22px; }
+    .footer__social-block a:first-child {
+      margin: 0; }
+
+.footer__right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.footer__navigation a {
+  padding: 20px;
+  font-size: 16px;
+  color: #26272D; }
+  .footer__navigation a:last-child {
+    padding: 20px 0 20px 20px; }
+  .footer__navigation a:hover {
+    color: #999; }
+
+.footer__button-download {
+  margin: 25px 0 35px 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .footer__social-block {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__right-section {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .footer__right-section {
+    display: none; }
+  .footer__left-section {
+    margin-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .footer__social-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }

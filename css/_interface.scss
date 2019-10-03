@@ -1,0 +1,83 @@
+@import "_variable.scss";
+
+.interface-block {
+    background-color: $color-middle-gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.interface-container {
+    margin-top: 140px;
+}
+
+.interface__title {
+    margin-bottom: 45px;
+}
+
+.interface__landing-screen-span {
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.interface__blue-line {
+    margin: 0 auto 45px auto;
+    width: 50px;
+    height: 2px;
+    text-align: center;
+    background-color: $color-blue;
+}
+
+.slide-item {
+    width: 100%;
+}
+
+.slid-item-img {
+    padding: 20px 0 65px;
+
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 20px 30px 5px rgba(0,0,0,0.1);
+    }
+}
+
+.carousel-block {
+    margin: 25px 0;
+    position: relative;
+}
+
+.slider-phone {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.owl-carousel .owl-item .slid-item-img img {
+    transition: all .25s linear;
+}
+
+.owl-carousel .owl-item.center .slid-item-img img {
+    transform: scale(1.15);
+    position: relative;
+    z-index: 3;
+}
+
+.owl-dot {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .interface-container {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .interface-container {
+        margin-top: 50px;
+        width: 100%;
+    }
+}

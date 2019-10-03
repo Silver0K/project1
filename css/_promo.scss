@@ -1,0 +1,152 @@
+@import "_variable.scss";
+
+
+.promo-block__right-bg {
+
+    background-position: -25px center;
+    background-size: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    background-image: url(../img/iPhone-6-1.png);
+    background-repeat: no-repeat;
+}
+
+.promo-block__left-bg {
+
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+    background-image: url(../img/World-Map.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+}
+
+
+.promo-section {
+    width: 50%;
+    margin: 225px 0;
+}
+
+.promo-section__title {
+    margin-bottom: 50px;
+}
+
+.promo-section__description {
+    margin-bottom: 20px;
+    font-weight: 200;
+
+    p {
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.promo-section__buttons {
+    justify-content: center;
+    justify-items: center;
+}
+
+.promo-section__info-who {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.promo-section__content {
+    margin-top: 10px;
+    display: flex;
+}
+
+.promo-section__links {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .promo-block__right-bg {
+        justify-content: center;
+        text-align: center;
+        background-image: none;
+        display: flex;
+    }
+
+    .promo-section {
+        margin: 70px 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo-section__buttons {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .promo-block__left-bg {
+        margin: 70px 0;
+        justify-content: center;
+        text-align: center;
+        justify-items: center;
+        background-image: none;
+        display: flex;
+        background-color: $color-white;
+    }
+
+    .promo-section__content {
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .promo-block__right-bg {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo-section {
+        margin: 50px 0;
+        width: 100%;
+    }
+
+    .promo-section__buttons {
+
+        :first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    .promo-block__left-bg {
+        margin: 50px 0;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        justify-items: center;
+        display: flex;
+        background-color: $color-white;
+        background-image: none;
+    }
+
+    .promo-section__description {
+        margin-bottom: 30px;
+    }
+    .promo-section__content {
+        margin-top: 20px;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+}
+

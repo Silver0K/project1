@@ -1,0 +1,122 @@
+@import "_variable.scss";
+
+$hover-blue: #448ef4;
+$hover-green: #45c71d;
+
+.button {
+    position: relative;
+    width: 202px;
+    height: 42px;
+    margin: auto 0;
+    padding: 0 15px;
+    border-radius: 30px;
+    color: $color-white;
+    font-size: $font-size-medium;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button--primary {
+    border: 1px solid $color-blue;
+    background-color: $color-blue;
+}
+
+.button--secondary {
+    border: 1px solid $color-gray;
+    background-color: $color-white;
+    color: $color-black;
+}
+
+.button--arrow  {
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/Arrow-Icon.png);
+        top: 13px;
+        right: 22px;
+        width: 14px;
+        height: 13px;
+    }
+
+    &:hover {
+        background-color: $hover-blue;
+    }
+}
+
+.button--secondary {
+    &:hover {
+        background-color: $color-gray;
+    }
+}
+
+.button--subscribe {
+    border-radius: 30px;
+    background: $color-green;
+    color: white;
+    border: 1px solid $color-green;
+    width: 160px;
+    height: 42px;
+    margin: auto 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: $font-size-medium;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/Arrow-Icon.png);
+        top: 13px;
+        right: 14px;
+        width: 14px;
+        height: 13px;
+    }
+    &:hover {
+        background-color: $hover-green;
+    }
+}
+
+.button--xl {
+    height: 50px;
+}
+
+.button--sm {
+    width: 142px;
+}
+
+.button--apple {
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/Apple-Icon.png);
+        top: 6px;
+        left: 12px;
+        width: 18px;
+        height: 21px;
+    }
+
+    &:hover {
+        background-color: $hover-blue;
+    }
+}
+
+.button-video {
+    color: $color-black;
+    background-color: $color-middle-gray;
+    border: 1px solid $color-gray;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/Play-Icon.png);
+        top: 19px;
+        left: 35px;
+        width: 10px;
+        height: 11px;
+    }
+    &:hover {
+        background-color: $color-gray;
+    }
+}
